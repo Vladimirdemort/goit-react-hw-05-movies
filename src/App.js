@@ -5,18 +5,21 @@ import Loader from 'react-loader-spinner';
 import Container from './components/Container';
 import AppBar from './components/AppBar/AppBar';
 import errorImage from './pages/error.jpg';
+import MovieDetailView from './components/MovieDetailView/MovieDetailView.jsx';
 import './App.css';
 
-const HomeView = lazy(() =>
-  import('./pages/HomeView.jsx' /* webpackChunkName: "HomeView" */),
+const HomePage = lazy(() =>
+  import('./pages/HomePage.jsx' /* webpackChunkName: "HomePage" */),
 );
 const NotFoundView = lazy(() =>
   import('./pages/NotFoundView.jsx' /* webpackChunkName: "NotFoundView" */),
 );
 
+const Movies = lazy(() => import('./pages/Movies.jsx'));
+
 export default function App() {
   return (
-    <Container title="Hello world!">
+    <Container>
       <AppBar />
 
       <Suspense
@@ -31,7 +34,9 @@ export default function App() {
         }
       >
         <Routes>
-          <Route path="" element={<HomeView />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movies/:movieId/*" element={<MovieDetailView />} />
           <Route
             path="*"
             element={

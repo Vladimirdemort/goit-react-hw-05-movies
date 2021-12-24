@@ -10,6 +10,12 @@ export default function Navigation() {
       >
         Home
       </NavLink>
+      <NavLink
+        to="/movies"
+        className={({ isActive }) => (isActive ? s.active : s.link)}
+      >
+        Movies
+      </NavLink>
     </nav>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "name": "react-default",
+  "name": "goit-react-hw-05-movies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,13 +33,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eduard-Konovka/react-default.git"
+    "url": "git+https://github.com/Vladimirdemort/goit-react-hw-05-movies.git"
   },
-  "author": "Eduard Konovka <ed098ua@gmail.com>",
+  "author": "Volodymyr Dvorskyi",
   "bugs": {
-    "url": "https://github.com/Eduard-Konovka/react-default/issues"
+    "url": "https://github.com/Vladimirdemort/goit-react-hw-05-movies/issues"
   },
-  "homepage": "https://Eduard-Konovka.github.io/react-default",
+  "homepage": "https://Vladimirdemort.github.io/goit-react-hw-05-movies",
   "eslintConfig": {
     "extends": [
       "react-app",
